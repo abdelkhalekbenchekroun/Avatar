@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English&family=Ubuntu:ital@0;1&display=swap');
+
+*{
+    font-family: 'IM Fell English', serif;
+    padding: 0;
+    margin: 0;
+    color:white;
+
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+body{
+    background-image: linear-gradient(to right, rgb(48, 43, 70), rgb(12, 12, 51));
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    background-image: linear-gradient(to right, rgb(48, 43, 70), #00000048), url(Avatar.jpg);
+    width: 90%;
+    height: 640px;
+    background-size: cover; /* Ajout de la propriété background-size */
+}
+
+@media (max-width:1000px){
+    .container{
+    background-position: center;  /*pour que si on varie l'ongle width l'image reste centrer*/
+    }
+}
+
+.container:hover{
+    background-image: linear-gradient(to right, rgb(48, 43, 70), transparent), url(Avatar.jpg);
+
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo{
+    font-size: 30px;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+ul{
+    width: 60%;  /*tres important pour que le justify-content: space-evenly; ça marche*/
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+ul a:hover{
+    border-bottom: 2px solid white;
+}
+
+.content{
+    width: 50%;
+    margin-top: 50px;
+    padding: 30px;
+}
+
+.content h2{
+    font-size:100px ;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+.content p{
+    letter-spacing: 2px;
+    width: 350px;
+    padding: 20px 0;
+    font-style: italic;
+}
+
+.content button{
+    font-size: 30px;
+    padding: 6px 10px;
+    border-radius: 10px;
+    color: black;
+    font-style: italic;
+    cursor: pointer;
+}
+
+.content button:hover{
+    background-color: transparent;
+    border-color: white;
+    color: white;
+
+}
